@@ -76,15 +76,15 @@ def envoyer_donnees():
     client.publish(TOPIC_HUMIDITY, valeurH)
  
     #LED TEMP
-    if t > h:
-        pi.write(R, 1)
-        pi.write(B, 0)
-    elif h > t:
-        pi.write(R, 0)
-        pi.write(B, 1)
-    else:
-        pi.write(R, 0)
-        pi.write(B, 0)
+   # if t > h:
+    #    pi.write(R, 1)
+    #    pi.write(B, 0)
+    #elif h > t:
+    #    pi.write(R, 0)
+    #    pi.write(B, 1)
+  #  else:
+    #    pi.write(R, 0)
+     #   pi.write(B, 0)
 
 ## Code fait par Andy
 def reception_msg(cl,userdata,msg):
